@@ -12,11 +12,11 @@
 ### 下面两张图是1分级别数据和tick数据的对比
 <img src="pic/DayKline.jpg" alt="Demo1" width="600">
 
-<img src="pic/TickLine.png" alt="Demo2" width="600">
+<img src="pic/TickLine.png" alt="Demo2" width="800">
 
 通过Tick图可以看到很多的细节。
 
-比如如图演示的日内行情，可以看到在13:48:15这个时间点有一个快速涨幅，  
+如图演示的日内行情，可以看到在13:48:15这个时间点有一个快速涨幅，  
 
 在最高点时，此时只是Ask1的价格很高，对应的Bid1仅有17手, 也就是说在实盘交易时最多只有`17手`可以实现在波峰处卖出。
 
