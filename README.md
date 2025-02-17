@@ -1,40 +1,30 @@
-# Minimal React template
+# TickLine
 
-A minimal React.js template that includes the following technology stack:
+### 背景
 
-- React18
-- TypeScript
-- Vite
-- pnpm
-- tailwindcss4.0
-- shadcn-ui
-- PWA
-- https
+最近在炒股时发现，市面上的炒股APP只能看到分钟级别的数据，而一些大涨大跌的行情需要更细致的结构才能观察到行情的变化，
 
-First Page is a bottom-navigation bar.
+这个项目就是把每个tick(3秒一次的level1数据)用图形展示出来
 
-# Demo
-
-<img src="pic/gif-demo.gif" alt="Demo" width="600">
-
-# Installation Requirements
-Nodejs + tailwindcss4.0 + shadcn-ui
+这是只是一个demo演示项目，放出代码让有兴趣研究tick级别数据的人进行参考
 
 
-# How To Use
-1.git clone --depth 1 https://github.com/Knowckx/mini-react-pwa.git yourAppName
+### 下面两张图是1分级别数据和tick数据的对比
+<img src="pic/DayKline.jpg" alt="Demo1" width="600">
 
-2.delete .git folder
+<img src="pic/TickLine.png" alt="Demo2" width="600">
 
-3.pnpm install
+通过Tick图可以看到很多的细节。
+
+比如如图演示的日内行情，可以看到在13:48:15这个时间点有一个快速涨幅，  
+
+在最高点时，此时只是Ask1的价格很高，对应的Bid1仅有17手, 也就是说在实盘交易时最多只有`17手`可以实现在波峰处卖出。
 
 # Command
-## run in dev
 
 pnpm dev
-
-## Build and run (support Https+PWA)
 
 pnpm run build
 
 pnpm preview --host
+

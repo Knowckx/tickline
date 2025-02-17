@@ -15,11 +15,11 @@ export default defineConfig({
                 globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,gif,svg,woff,woff2}'] // 缓存所有常见的静态资源
             },
             manifest: {
-                name: 'MyPWA',
-                short_name: 'MyPWA',
+                name: 'TickLine',
+                short_name: 'TickLine',
                 description: 'Description',
                 theme_color: '#ffffff',
-                // orientation: "landscape-primary", // 优先横屏
+                orientation: "landscape-primary", // 优先横屏
                 icons: [
                     {
                         src: 'pwa-512x512.png',
@@ -42,7 +42,7 @@ export default defineConfig({
         host: true,
     },
     preview: {
-        port: 7000,
+        port: 7002,
         host:true  // 允许外部访问
     },
 })
