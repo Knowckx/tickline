@@ -1,33 +1,32 @@
 # TickLine
 
-### 背景
+### Background
 
-最近在研究基金时发现，市面上的炒股APP只能看到分钟级别的数据，而一些大涨大跌的行情需要更细致的结构才能观察到行情的变化，
+Recently, while researching funds, I noticed that existing stock trading apps only provide minute-level data. To observe the changes in market sentiment during large rallies or drops, a more granular structure is needed.
 
-这个项目就是把每个tick(3秒一次的level1数据)用图形展示出来
+This project visualizes each tick (Level 1 data received every 3 seconds) as a graphical representation.
 
-这是一个demo演示项目, 使用了react + echarts. 展示Tick级的价格变化。
+This is a demo project, using React + ECharts. It displays tick-level price changes.
 
 ...
-最近兴趣又转到了美股期权上了，这个项目先占个坑，后面有时间再更新吧
+Recently my interest has shifted to US stock options. This project will be on hold for now; I'll update it when I have more time.
 
+### The following two images compare 1-minute level data with tick data:
 
-### 下面两张图是1分级别数据和tick数据的对比
 <img src="pic/DayKline.jpg" alt="Demo1" width="600">
 
 <img src="pic/TickLine.png" alt="Demo2" width="800">
 
-通过Tick图可以看到很多的细节。
+Many details can be seen through the Tick chart.
 
-如图演示的日内行情，可以看到在13:48:15这个时间点有一个快速涨幅，  
+As shown in the intraday market example, there is a rapid increase at 13:48:15.
 
-在最高点时，此时只是Ask1的价格很高，对应的Bid1仅有17手, 也就是说在实盘交易时最多只有`17手`可以实现在波峰处卖出。
+At the highest point, only the Ask1 price is high, with Bid1 only at 17 lots. This means that in real trading, a maximum of `17 lots` could be sold at the peak.
 
-# 项目运行
+# Project Execution
 
 pnpm dev
 
 pnpm run build
 
 pnpm preview --host
-
